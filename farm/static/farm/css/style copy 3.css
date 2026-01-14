@@ -81,20 +81,6 @@ body {
     color: var(--primary-blue) !important;
 }
 
-/* Remove navbar toggler border when closed/unfocused */
-.navbar-toggler:focus {
-    box-shadow: 0 0 0 0.2rem rgba(74, 144, 226, 0.25);
-}
-
-.navbar-toggler {
-    border-color: var(--border-gray);
-}
-
-.navbar-toggler:not(:focus):not(.active) {
-    border-color: var(--border-gray);
-    box-shadow: none;
-}
-
 /* Subtle Gradient Backgrounds - more refined */
 #about {
     background: linear-gradient(135deg, #ffffff 0%, var(--lighter-blue) 100%);
@@ -257,10 +243,6 @@ h3, h4, h5 {
         margin-bottom: 2rem;
     }
     
-    #about .col-lg-6 {
-        text-align: center;
-    }
-    
     .gallery-item img {
         max-width: 100%;
     }
@@ -324,3 +306,4 @@ section {
 .card, .gallery-item {
     animation: fadeIn 0.6s ease-out;
 }
+
