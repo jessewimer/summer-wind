@@ -1,0 +1,176 @@
+{% extends 'farm/base.html' %}
+{% load static %}
+
+{% block content %}
+<!-- Compact Navigation Header -->
+<nav class="navbar navbar-expand-lg navbar-light compact-header">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#home">
+            <img src="{% static 'farm/images/icon.png' %}" alt="Summer Wind Farm" class="navbar-icon me-2">
+            <span class="brand-text">Summer Wind</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#products">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- About Section -->
+<section id="about" class="py-5 bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <img src="{% static 'farm/images/honcho.JPEG' %}" alt="Farm Landscape" class="img-fluid rounded shadow">
+            </div>
+            <div class="col-lg-6">
+                <h2 class="display-5 fw-bold mb-4">Welcome to Summer Wind</h2>
+                <p class="lead text-muted">
+                    Nestled in the heart of the countryside, Summer Wind Farm has been a family-operated 
+                    business dedicated to providing the finest natural products to our community.
+                </p>
+                <p class="text-muted">
+                    From our sun-ripened blueberries to our carefully crafted homemade salves and premium hay, 
+                    every product reflects our commitment to quality, sustainability, and traditional farming values.
+                </p>
+                <p class="text-muted">
+                    We take pride in our hands-on approach, ensuring that each product meets the highest standards 
+                    of excellence while maintaining the natural goodness that only a family farm can provide.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Products Section -->
+<section id="products" class="py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="display-5 fw-bold">Our Products</h2>
+            <p class="lead text-muted">Grown and crafted with care</p>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm product-card">
+                    <div class="card-body text-center p-4">
+                        <div class="product-icon mb-3">
+                            <i class="bi bi-flower3"></i>
+                        </div>
+                        <h3 class="h4 fw-bold mb-3">Fresh Blueberries</h3>
+                        <p class="text-muted">Hand-picked, sweet and juicy blueberries grown with care on our farm.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm product-card">
+                    <div class="card-body text-center p-4">
+                        <div class="product-icon mb-3">
+                            <i class="bi bi-droplet-fill"></i>
+                        </div>
+                        <h3 class="h4 fw-bold mb-3">Homemade Salve</h3>
+                        <p class="text-muted">Natural, healing salves crafted from our farm-grown herbs and ingredients.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm product-card">
+                    <div class="card-body text-center p-4">
+                        <div class="product-icon mb-3">
+                            <i class="bi bi-grid-3x3-gap-fill"></i>
+                        </div>
+                        <h3 class="h4 fw-bold mb-3">Premium Hay</h3>
+                        <p class="text-muted">High-quality hay, perfectly dried and baled for your livestock needs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Gallery Section -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="display-5 fw-bold">Farm Life</h2>
+            <p class="lead text-muted">A glimpse of our daily work</p>
+        </div>
+        
+        <div class="row g-4">
+            {% comment %} <div class="col-md-4">
+                <div class="gallery-item">
+                    <img src="{% static 'farm/images/honcho.JPEG' %}" alt="Honcho" class="img-fluid rounded shadow">
+                </div>
+            </div> {% endcomment %}
+            <div class="col-md-4">
+                <div class="gallery-item">
+                    <img src="{% static 'farm/images/sunset.JPEG' %}" alt="Homemade Salve" class="img-fluid rounded shadow">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="gallery-item">
+                    <img src="{% static 'farm/images/field.JPEG' %}" alt="Premium Hay" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="text-center mb-5">
+                    <h2 class="display-5 fw-bold">Get In Touch</h2>
+                    <p class="lead text-muted">We'd love to hear from you</p>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-md-4 text-center">
+                        <div class="contact-icon mb-3">
+                            <i class="bi bi-geo-alt-fill"></i>
+                        </div>
+                        <h5 class="fw-bold">Visit Us</h5>
+                        <p class="text-muted">1227 Broeneke Road<br>Moscow, ID 83843</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="contact-icon mb-3">
+                            <i class="bi bi-telephone-fill"></i>
+                        </div>
+                        <h5 class="fw-bold">Call Us</h5>
+                        <p class="text-muted">(555) 123-4567</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="contact-icon mb-3">
+                            <i class="bi bi-envelope-fill"></i>
+                        </div>
+                        <h5 class="fw-bold">Email Us</h5>
+                        <p class="text-muted">info@summerwind.farm</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer-section">
+    <div class="container text-center">
+        <p class="mb-0">&copy; 2026 Summer Wind. All rights reserved.</p>
+        <p class="text-muted small mb-0">Grown with love, crafted with care</p>
+    </div>
+</footer>
+{% endblock %}

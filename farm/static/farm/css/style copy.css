@@ -1,0 +1,152 @@
+/* Custom styles for Summer Wind Farm */
+
+:root {
+    /* Blue and Yellow Theme */
+    --primary-blue: #5B9BD5;
+    --light-blue: #D4E6F5;
+    --accent-yellow: #FFD966;
+    --dark-blue: #2E5C8A;
+    --soft-yellow: #FFF4CC;
+    --text-dark: #333;
+    --text-muted: #666;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-dark);
+}
+
+/* Compact Header/Navbar */
+.compact-header {
+    background-color: var(--light-blue);
+    padding: 0.5rem 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-icon {
+    height: 36px;
+    width: auto;
+}
+
+.navbar-brand {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--dark-blue) !important;
+    padding: 0.25rem 0;
+}
+
+.brand-text {
+    color: var(--dark-blue);
+}
+
+.nav-link {
+    font-weight: 500;
+    color: var(--text-dark) !important;
+    transition: color 0.3s ease;
+    padding: 0.5rem 1rem !important;
+}
+
+.nav-link:hover {
+    color: var(--primary-blue) !important;
+}
+
+/* Product Cards */
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(91, 155, 213, 0.2) !important;
+}
+
+.product-icon i {
+    font-size: 4rem;
+    color: var(--primary-blue);
+}
+
+/* Gallery */
+.gallery-item {
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.gallery-item img {
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Contact Icons */
+.contact-icon i {
+    font-size: 2.5rem;
+    color: var(--primary-blue);
+}
+
+/* Footer */
+.footer-section {
+    background-color: var(--dark-blue);
+    color: white;
+    padding: 2rem 0;
+}
+
+.footer-section .text-muted {
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* Section Headers */
+.display-5 {
+    color: var(--dark-blue);
+}
+
+/* Add subtle yellow accents */
+.card:hover .product-icon i {
+    color: var(--accent-yellow);
+    filter: drop-shadow(0 0 8px rgba(255, 217, 102, 0.4));
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar-icon {
+        height: 32px;
+    }
+    
+    .navbar-brand {
+        font-size: 1.1rem;
+    }
+    
+    .display-5 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-icon {
+        height: 28px;
+    }
+    
+    .navbar-brand {
+        font-size: 1rem;
+    }
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Section spacing adjustment for sticky header */
+section {
+    scroll-margin-top: 60px;
+}
+
+/* Add a subtle pattern to light sections for visual interest */
+.bg-light {
+    background-color: #f8f9fa !important;
+}
